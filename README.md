@@ -1,40 +1,26 @@
-# AutoSkipYT
+# AutoSkipYT  
 
-## Project Status: In Development
+A Tampermonkey userscript that automatically skips YouTube ads.  
 
-**AutoSkipYT** is a browser extension designed to reduce interruption from YouTube ads by automatically muting them and attempting to click the "Skip Ad" button when it becomes available.
+## Features  
+- Clicks skip buttons on skippable ads  
+- Seeks through unskippable ads  
+- Works on all YouTube pages  
 
-### Current Features
+## Installation  
+1. Install [Tampermonkey](https://www.tampermonkey.net/)  
+2. Click "Create a new script"  
+3. Paste the contents of `autoskipyt.js`  
+4. Save and refresh YouTube  
 
-- Mutes video ads automatically
-- Detects YouTube's "Skip Ad" button
-- Simulates a click on the skip button (firing successfully, though ad-skipping is not always achieved)
+## How It Works  
+- Checks for ads every **500ms**  
+- Detects both `.ytp-ad-skip-button-modern` and older skip buttons  
+- Seeks to end if no skip button is found  
 
-### In Progress
+## Troubleshooting  
+- If ads aren't skipped, check the console for errors (`Ctrl+Shift+J`).  
+- Update the script if YouTube changes its ad elements.  
 
-- Improving reliability of the skip click using deeper DOM inspection
-- Testing alternative event simulation strategies
-- Refining mutation observation and performance
-
----
-
-## Contributions
-
-Pull requests and issue reports are welcome. If you're familiar with browser automation, Chrome Extensions, or YouTube’s DOM structure — feel free to jump in!
-
----
-
-## Disclaimer
-
-This project is intended for educational and experimental purposes only.  
-AutoSkipYT interacts with YouTube’s interface via simulated user events and does **not** alter YouTube's backend or interfere with ad delivery on the server side.
-
-By using or modifying this project, you agree to take full responsibility for compliance with the [YouTube Terms of Service](https://www.youtube.com/t/terms) and any relevant laws or policies in your region.
-
-> This tool is not affiliated with, endorsed by, or approved by YouTube or Google.
-
----
-
-## 📄 License
-
-MIT License – see [`LICENSE`](./LICENSE) for details.
+## License  
+MIT (Free to use and modify)  
