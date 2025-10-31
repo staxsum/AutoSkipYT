@@ -3,7 +3,6 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Skips YouTube ads automatically
-// @author       j4g
 // @match        *://*.youtube.com/*
 // @grant        none
 // ==/UserScript==
@@ -48,3 +47,4 @@
     // Also run when page changes (for SPA navigation)
     document.addEventListener('yt-navigate-finish', skipAd);
 })();
+
