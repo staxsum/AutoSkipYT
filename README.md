@@ -1,6 +1,6 @@
 # AutoSkipYT  
 
-A Tampermonkey userscript that automatically skips YouTube ads.  
+A Tampermonkey userscript that automatically skips YouTube ads for chrome users.  
 
 ## Features  
 - Clicks skip buttons on skippable ads  
